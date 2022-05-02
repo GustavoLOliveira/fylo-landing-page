@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.logo {
+    height: 50px;
+    margin-left: 50px;
+}
+.lista-menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.itens-menu {
+    margin-right: 20px;
+}
+
+.itens-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 720px;
+    height: 534px;
+    margin-bottom: 100px;
+}
+
+.botao{
+    text-decoration: none;
+    color: white;
+}
+
+.botao--box {
+    width: 200px;
+    height: 50px;
+    background-color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+    margin: auto;
+    padding: calc((50px - 14px)/2);
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.container--beneficios {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.container--beneficios1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.container--beneficios2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    width: 400px; 
+    text-align: center;
+}
+
+.box2 {
+    width: 400px; 
+    text-align: center;
+}
+
+.icone--beneficios {
+    margin-bottom: 10px;
+}
+
+.container--produtive {
+    display: flex;
+    flex-direction: row;
+    height: 465px;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.svg-produtive {
+    width: 615px;
+}
+
+.texto--produtive {
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+    justify-content: center;
+}
+
+.texto--produtive p {
+    margin-bottom: 15px;
+}
+
+.texto--produtive a {
+    color: hsl(176, 68%, 64%);
+}
+
+
+.aspas {
+    margin-left: 90px;
+    margin-bottom: -10px;
+}
+
+.container--comentarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 35px 25px;
+    text-align:start;
+    box-shadow: 10px 5px hsl(217, 28%, 15%)
+}
+
+.perfil--box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.texto-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-box p {
+    font-size: 12px;
+}
+
+.container--comentarios img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 200px;
+    padding: 80px;
+    background-color: hsl(217, 28%, 15%);
+    margin: auto;
+    margin-bottom: 200px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.newsletter p {
+    margin-bottom: 25px;
+}
+
+.newsletter a {
+    color: white;
+    text-decoration: none;
+}
+
+.botao--email{
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background-color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+    margin: auto;
+    padding: calc((50px - 14px)/2);
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.email input {
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 15px;
+}
