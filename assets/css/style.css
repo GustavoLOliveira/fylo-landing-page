@@ -445,3 +445,51 @@ footer {
 .sobre p, .termos p {
     margin-bottom: 15px;   
 }
+
+.rede--social{
+    display: flex;
+    flex-direction: row;
+}
+
+.icone-social {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 4.5px;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+
+    footer {
+        height: 900px;
+    }
+    .logo--footer {
+        margin-left: 15px;
+        margin-bottom: 50px;
+    }
+
+    .conteudo--footer {
+        flex-direction: column;
+    }
+
+    .endereco {
+        margin-bottom: 35px;
+    }
+
+    .contato {
+        margin-bottom: 50px;
+    }
+
+    .sobre, .termos {
+        margin-bottom: 50px;
+    }
+
+    .rede--social {
+        justify-content: center;
+        margin-left: -40px;
+    }
+
+}
