@@ -444,6 +444,7 @@ footer {
 
 .sobre p, .termos p {
     margin-bottom: 15px;   
+<<<<<<< HEAD
 }
 
 .rede--social{
@@ -492,4 +493,6 @@ footer {
         margin-left: -40px;
     }
 
+=======
+>>>>>>> c795149a19dfa04e3dcc1a8c4a691db1e935eee2
 }
