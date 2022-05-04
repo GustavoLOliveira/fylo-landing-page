@@ -31,7 +31,7 @@ h6 {
 }
 
 .menu {
-    width: 100vw;
+    width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -40,10 +40,12 @@ h6 {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
 .logo {
     height: 50px;
     margin-left: 50px;
 }
+
 .lista-menu {
     display: flex;
     flex-direction: row;
@@ -59,6 +61,41 @@ h6 {
     color: white;
 }
 
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .menu {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 35px;
+        padding-right: 20px;
+        margin-bottom: -55px;
+    }
+
+    .logo {
+        height: 30px;
+        margin-left: 0;
+    }
+
+    .lista-menu {
+        margin-right: 0px;
+    }
+
+    .itens-menu {
+        margin-right: 10px;
+    }
+
+    .itens-menu a {
+        font-size: 13px;
+    }
+}
 .descricao {
     display: flex;
     flex-direction: column;
@@ -87,6 +124,23 @@ h6 {
     justify-content: center;
     border-radius: 25px;
 
+}
+
+@media screen and (max-width: 480px) {
+    .descricao {
+        margin-top: 35px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: calc((100vw - 90%)/2);
+        text-align: center;
+        margin-bottom: -35px;
+    }
+
+    .descricao img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
 
 .container--beneficios {
@@ -124,6 +178,33 @@ h6 {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 480px) {
+
+    .container--beneficios1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    .container--beneficios2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: -55px;
+    }
+
+    .box1 {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .box2 {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
+
 .container--produtive {
     display: flex;
     flex-direction: row;
@@ -150,6 +231,29 @@ h6 {
 
 .texto--produtive a {
     color: hsl(176, 68%, 64%);
+}
+
+@media screen and (max-width: 480px) {
+    .container--produtive {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .svg-produtive{
+        width: 90%;
+    }
+
+    .texto--produtive {
+        width: 90%;
+        text-align: flex-start;
+    }
+    .texto--produtive h1 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
 }
 
 
@@ -202,18 +306,39 @@ h6 {
     margin-right: 5px;
 }
 
+@media screen and (max-width: 480px) {
+
+    .aspas {
+        width: 35px;
+        margin-left: 10px;
+    }
+
+    .container--comentarios {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 25px;
+    }
+
+    .box {
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+}
+
 .newsletter {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 750px;
-    height: 200px;
     padding: 80px;
     background-color: hsl(217, 28%, 15%);
     margin: auto;
-    margin-bottom: 200px;
     justify-content: center;
     text-align: center;
     border-radius: 5px;
+    margin-bottom: -100px;
 }
 
 .newsletter p {
@@ -243,4 +368,80 @@ h6 {
     height: 50px;
     border-radius: 25px;
     padding-left: 15px;
+}
+
+@media screen and (max-width: 480px)  {
+    .newsletter {
+        width: 90%;
+        padding: 30px;
+    }
+    .email {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .email input {
+        width: 280px;
+    }
+
+    .botao--email {
+        width: 280px;
+        margin-top: 25px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 53%, 9%);
+    height: 500px;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.logo--footer {
+    height: 50px;
+    width: 169.22px;
+    margin-left: 175px;
+    margin-bottom: 30px;
+}
+
+.conteudo--footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    text-align:start;
+    margin-right: 25px;
+}
+
+.endereco img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato img {
+    margin-right: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+}
+
+.contato p {
+    margin-bottom: 15px;
+}
+
+.sobre p, .termos p {
+    margin-bottom: 15px;   
 }
